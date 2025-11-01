@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCast App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-container">
+        <img src="images/weatherbg.jpg" alt="weather background" class="bg-image">
+    </div>
+
+    <header class="app-header">
+        <div class="header-left">
+            <h1 class="app-title">CloudCast</h1>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Enter city name" spellcheck="false">
+                    <button class="clear-btn" aria-label="Clear search">&times;</button>
+                </div>
+                <button class="search-btn"><img src="images/search.png" alt="Search"></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="welcome-message">
+        <h2>Welcome to CloudCast</h2>
+        <p>Get accurate, real-time weather updates and forecasts for any city in the world. Cloudcast provides detailed
+            insights including temperature, humidity, wind speed, AQI and rainfall predictions — all beautifully visualized.
+            Whether you're planning your next trip or just stepping out for the day, Cloudcast helps you stay prepared
+            for whatever the sky brings.</p>
+    </div>
+
+    <div class="error">
+        <p>Please enter valid city</p>
+    </div>
+
+    <div class="cards-container">
+        <div class="main-card">
+            <div class="weather">
+                <h2 class="city">Delhi</h2>
+                <img src="images/rain.png" class="weather-icon" alt="weather icon">
+                <h1 class="temp">22°C</h1>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="humidity-card">
+                <div class="stat-content">
+                    <img src="images/humidity.png" alt="humidity icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wind-card">
+                <div class="stat-content">
+                    <img src="images/wind.png" alt="wind icon">
+                    <div>
+                        <p class="wind">15km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aqi-card">
+                <div class="stat-content">
+                    <img src="images/aqi.png" alt="aqi icon">
+                    <div>
+                        <p class="aqi">Good</p>
+                        <p>AQI</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
